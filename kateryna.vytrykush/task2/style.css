@@ -1,0 +1,115 @@
+.personal_photo img{
+     max-height: 200px;
+     border-radius: 10%;
+     display: block;
+
+}
+body
+{
+	background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)),url(images/picture7.jpg);
+	height:auto;
+	background-position: center;
+}
+.personal_inf{
+     width: 1000px;
+     margin: 10px auto;
+     padding: 10px 10px;
+
+     /*box-shadow: 5px 0 10px #ccc, -5px 0 10px #ccc, 0 5px 15px #ccc;*/
+     background-image:url(images/pink.jpg);
+}
+header{
+	width: 90%;
+	margin: 10px 0;
+	display: flex;
+    justify-content: space-around;
+
+}
+.name{
+	font-style: oblique;
+	font-size: large;
+	font-weight: bolder;
+}
+.contacts{
+	width: 20%;
+}
+ .personal_skills {
+     margin: auto;
+     text-align: center;
+ }
+ .personal_skills .skills {
+     display: flex;
+     width: 700px;
+     justify-content: space-around;
+     margin: auto;
+}
+.education {
+     margin: auto;
+     text-align: left;
+ }
+ 
+ .interests {     
+  margin: auto;     
+  text-align: center;     
+  display: flex;
+  width: 700px;      
+  justify-content: space-around;      
+  margin: auto;
+  padding: 20px 40px;
+ } 
+ .interests .hobbie { 
+  border:
+  1px solid #f9c89c;
+ }   
+.myprogress{     
+	margin: 10px; }
+
+li{
+	display: inline;
+}
+
+.rate {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.rate .star1 {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      color: #FFD700;
+      text-shadow:
+          0 1px #06c,
+          0 -1px #06c,
+          1px 0 #06c,
+          -1px 0 #06c;
+}
+.rate .star1:before {
+     content: '\2605';
+}
+.rate .star1:hover ~ .star {
+   color: #fff;
+}
+.rate .star2 {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      color: #fff;
+      text-shadow:
+          0 1px #06c,
+          0 -1px #06c,
+          1px 0 #06c,
+          -1px 0 #06c;
+}
+.rate .star2:before {
+     content: '\2605';
+}
+.rate .star2:hover ~ .star {
+   color: #fff;
+}
+

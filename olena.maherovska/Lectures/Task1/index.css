@@ -1,0 +1,20 @@
+ .container {
+   width: 500px;
+   height: 300px;
+   margin: 0 auto;
+ }
+ textarea {
+   border: 1px solid black;
+ }
+button {
+   float: right;
+   margin: 20px 43px 0;
+   width: 120px;
+   height: 30px;
+   border-radius: 4px;
+   border-color: gray;
+   border-style: solid;
+}
+.wrapper {
+   margin-top: 80px;
+}
