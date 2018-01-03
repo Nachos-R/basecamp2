@@ -40,28 +40,17 @@ function removeZeros(arr){
 //////////////////////////////////////////////////////////////////////
 
 Array.prototype.sameStructureAs = function(arr){
-	let firstArr = this,
-		typeArr1 = [],
-		typeArr2 = [];
+	let firstArr = JSON.stringify(this),
+		secondArr = JSON.stringify(arr),
+		reg = /(\d,{0,}){0,}/g;
+		
+	firstArr = firstArr.replace(reg, '-'),
+	secondArr = secondArr.replace(reg, '-');
 
-	firstArr.forEach(item => {
-		typeArr1.push(typeof item);
-	});
-	arr.forEach(item => {
-		typeArr2.push(typeof item);
-	});
-	if(typeArr1.length != typeArr2.length){
-		return false;
-	}
-	for (var i = 0; i < typeArr1.length; i++) {
-		if(typeArr1[i] != typeArr2[i]){
-			return false;
-		}
-	}
-	return true;
+	return firstArr == secondArr;
 }
 
-//console.log([ 1, [ 1, 1 ] ].sameStructureAs( [ 2, [ 2 ] ] ));
+//console.log([ [2, [3,4,5] ] ].sameStructureAs( [1, [2, [3  ] ]]));
 
 ///////////////////////////////////////////////////////////////
 
