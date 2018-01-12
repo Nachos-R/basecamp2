@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.game_area{
+	display: flex;
+	position: relative;
+	width: 520px;
+	height: 500px;
+	background-color: #aaa;
+	flex-flow: wrap;
+	justify-content: space-around;
+	padding-top: 10px;
+	margin: 20px;
+}
+.cell{
+	width: 150px;
+	height: 150px;
+	background-color: #ccc;
+
+}
+
+#choice{
+	position: absolute;
+	left: 50%;
+	top: 0;
+}
+#choice p{
+	font-size: 72px;
+	line-height: 80px;
+	font-weight: bolder;
+	margin: 20px 0;
+}
+#choice img{
+	width: 100px;
+}
+.x{
+	float: left;
+}
+.zero, .minus{
+	height: 120px;
+}
+.item{
+	width: 100px;
+	cursor: pointer;
+}
+#clear{
+	position: absolute;
+	left: 50%;
+	top: 300px;
+	width: 320px;
+	height: 50px;
+	background: #ccc;
+	font-size: 32px;
+	border: 1px solid #a5a5a5;
+	cursor: pointer;
+}
