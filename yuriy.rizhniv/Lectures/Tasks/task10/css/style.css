@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	padding: 20px;
+	width: 96%;
+}
+.chat-block{
+	width: 70%;
+	height: 550px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	float: left;
+}
+
+.users{
+	width: 27%;
+	height: 550px;
+	border: 2px solid #ccc;	
+	border-radius: 5px;
+	margin-left: 20px;
+	position: relative;
+	float: right;
+}
+.header{
+	background: #ccc;
+	height: 30px; 
+	padding-left: 10px;
+}
+.add-user{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+#addBtn{
+	margin:10px auto;
+	display: block;
+	width: 200px;
+	height: 40px;
+	background: #3a71f1;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+}
+.field{
+	padding: 20px;
+	height: 75%;
+	overflow-y: scroll;
+}
+#chat-field{
+	height: 85%;
+}
+.user{
+	width: 100%;
+	margin: 10px 0;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+}
+.ava-block{
+	margin-right: 10px;
+}
+.avatar{	
+	width: 90px;
+	height: 90px;
+	margin: 0;
+	border-radius: 100px;
+	margin: 5px;
+}
+.info{
+	font-family: sans-serif;
+	flex-grow: 5;
+	display: inline-block;
+	margin: 5px auto;
+}
+.info .name{
+	color: green;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 26px;
+}
+.info .city, .info .phone{
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 22px;
+}
+
+
+.char-block .user{
+
+}
+.chat-block .user .avatar{
+	border-radius: 10px;
+}
+
+#reset{
+	margin:20px auto;
+	width: 300px;
+	height: 60px;
+	background: #3a71f1;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	left: 35%;
+}
+
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:5px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#56999f;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:4px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 4px;
+}
